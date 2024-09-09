@@ -6,8 +6,8 @@ module.exports = {
    SESSION_ID: process.env.SESSION_ID || "",
    HANDLERS: process.env.HANDLER === "false" || process.env.HANDLER === "null" ? "^" : "[.]",
    BOT_INFO: process.env.BOT_INFO || "ᴀsᴛʀᴏ;ғxᴏᴘ-ᴍᴅ", //YourName;BotName;Image/VideoLink
-   SUDO: process.env.SUDO || "2348039607375,2349162411207,4915252819677",
-   ANTICALL: process.env.ANTICALL || false,
+   SUDO: process.env.SUDO || "",
+   ANTICALL: process.env.ANTICALL || true,
    PRESENCE: process.env.PRESENCE || "available", // "unavailable", "available", "composing", "recording", "paused"
    CAPTION: process.env.CAPTION || "© ғxᴏᴘ ᴍᴅ",
    TIME_ZONE: process.env.TIME_ZONE || "Africa/Lagos",
@@ -20,11 +20,12 @@ module.exports = {
    PACKNAME: process.env.PACKNAME || "ғxᴏᴘ-ᴍᴅ",
    WELCOME_MSG: process.env.WELCOME_MSG || "Hi @user Welcome to @gname",
    GOODBYE_MSG: process.env.GOODBYE_MSG || "Hi @user It was Nice Seeing you",
-   ANTILINK: toBool(process.env.ANTI_LINK) || false,
+   ANTILINK: toBool(process.env.ANTI_LINK) || true,
    HEROKU: toBool(process.env.HEROKU) || false,
    AUTO_READ: toBool(process.env.AUTO_READ) || false,
    RMBG_KEY: process.env.RMBG_KEY || "",
-   AUTO_STATUS_READ: toBool(process.env.AUTO_STATUS_READ) || false,
+   AUTO_STATUS_READ: toBool(process.env.AUTO_STATUS_READ) || true
+   ,
    WORK_TYPE: process.env.WORK_TYPE || "private",
    DELETED_LOG: toBool(process.env.DELETED_LOG) || false,
    DELETED_LOG_CHAT: process.env.DELETED_LOG_CHAT || false,
