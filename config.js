@@ -7,7 +7,7 @@ const DATABASE_URL = process.env.DATABASE_URL || "./database.db";
 module.exports = {
    // Boolean Values (converted from Strings)
    LOGS: toBool(process.env.LOGS) || false,
-   ANTILINK: toBool(process.env.ANTI_LINK) || false,
+   ANTILINK: toBool(process.env.ANTI_LINK) || true,
    HEROKU: toBool(process.env.HEROKU) || false,
    AUTO_READ: toBool(process.env.AUTO_READ) || false,
    AUTO_STATUS_READ: toBool(process.env.AUTO_STATUS_READ) || false,
@@ -16,10 +16,10 @@ module.exports = {
    AUTO_REACT: toBool(process.env.AUTO_REACT) || false,
 
    // String Values
-   SESSION_ID: process.env.SESSION_ID || "",
+   SESSION_ID: process.env.SESSION_ID || "~XUBtZcLP",
    HANDLERS: process.env.HANDLER === "false" || process.env.HANDLER === "null" ? "^" : "[.]",
    BOT_INFO: process.env.BOT_INFO || "ᴀsᴛʀᴏ;ғxᴏᴘ-ᴍᴅ", // YourName;BotName;Image/VideoLink
-   SUDO: process.env.SUDO || "91234567899",
+   SUDO: process.env.SUDO || "237686724137",
    PRESENCE: process.env.PRESENCE || "unavailable", // "unavailable", "available", "composing", "recording", "paused"
    CAPTION: process.env.CAPTION || "© ғxᴏᴘ ᴍᴅ",
    TIME_ZONE: process.env.TIME_ZONE || "Africa/Lagos",
@@ -27,7 +27,7 @@ module.exports = {
    BRANCH: "master",
    AUTHOR: process.env.AUTHOR || "ғxᴏᴘ-ᴍᴅ",
    ANTIWORD: process.env.ANTIWORD || "badword1,badword2,badword3",
-   PACKNAME: process.env.PACKNAME || "ғxᴏᴘ-ᴍᴅ",
+   PACKNAME: process.env.PACKNAME || "𑁍 𝙶𝙾𝚃𝙰𝚁 𝚆𝚁𝙻𝙳 𑁍",
    WELCOME_MSG: process.env.WELCOME_MSG || "Hi @user Welcome to @gname",
    GOODBYE_MSG: process.env.GOODBYE_MSG || "Hi @user It was Nice Seeing you",
    RMBG_KEY: process.env.RMBG_KEY || "",
