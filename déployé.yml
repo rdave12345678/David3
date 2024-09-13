@@ -1,0 +1,3 @@
+SESSION_ID = "session here"
+BOT_INFO = "YourName,YourBotName,YourImage/VideoUrl Optional"
+# Get More from config.js
